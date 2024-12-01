@@ -35,9 +35,3 @@ komorebic enable-autostart --config $Env:USERPROFILE\.config\komorebi\komorebi.j
 
 Write-Host ""
 Write-Host "All done!"
-Write-Host ""
-Write-Host "Additional Steps:"
-Write-Host "- Start yasb from the start menu"
-Write-Host "- Set yasb to autostart via yasb tray icon"
-Write-Host "- Launch komorebi from yasb tray icon"
-Write-Host "- Enjoy!"

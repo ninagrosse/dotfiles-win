@@ -3,7 +3,7 @@ Write-Host ""
 
 # Some helper functions
 function create_dir($dir) {
-   if (!(Test-Path -Path $dir)) {
+  if (!(Test-Path -Path $dir)) {
     Write-Host "Creating directory" $dir
     mkdir $dir > $null
   }

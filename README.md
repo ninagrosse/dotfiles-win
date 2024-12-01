@@ -4,7 +4,10 @@ My personal dotfiles for Windows 11
 
 ## Prerequisites
 
-Clone in PowerShell with `git clone git@github.com:ninagrosse/dotfiles-win.git $Env:USERPROFILE/.dotfiles-win`
+Clone in PowerShell
+```shell
+git clone git@github.com:ninagrosse/dotfiles-win.git $Env:USERPROFILE/.dotfiles-win`
+```
 
 ## Setup [komorebi](https://github.com/LGUG2Z/komorebi) and [yasb](https://github.com/amnweb/yasb)
 

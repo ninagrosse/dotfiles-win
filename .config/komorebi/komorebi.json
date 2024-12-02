@@ -8,6 +8,7 @@
   "border": true,
   "border_width": 3,
   "border_offset": -1,
+  "mouse_follows_focus": false,
   "theme": {
     "palette": "Base16",
     "name": "Ashes",
@@ -21,7 +22,11 @@
       "width": 300
     }
   },
-  "monitors": [
+  "display_index_preferences": {
+    "0": "IVM6643-4&2c4d2617&0&UID8261",
+    "1": "LEN4146-4&2c4d2617&0&UID8388688"
+  },
+  "monitors":  [
     {
       "workspaces": [
         {
@@ -30,27 +35,27 @@
         },
         {
           "name": "II",
-          "layout": "VerticalStack"
+          "layout": "BSP"
         },
         {
           "name": "III",
-          "layout": "HorizontalStack"
-        },
-        {
-          "name": "IV",
-          "layout": "UltrawideVerticalStack"
-        },
-        {
-          "name": "V",
-          "layout": "Rows"
-        },
-        {
-          "name": "VI",
           "layout": "Grid"
         },
         {
+          "name": "IV",
+          "layout": "BSP"
+        },
+        {
+          "name": "V",
+          "layout": "BSP"
+        },
+        {
+          "name": "VI",
+          "layout": "BSP"
+        },
+        {
           "name": "VII",
-          "layout": "RightMainVerticalStack"
+          "layout": "BSP"
         }
       ]
     },
@@ -62,29 +67,58 @@
         },
         {
           "name": "II",
-          "layout": "VerticalStack"
+          "layout": "BSP"
         },
         {
           "name": "III",
-          "layout": "HorizontalStack"
+          "layout": "BSP"
         },
         {
           "name": "IV",
-          "layout": "UltrawideVerticalStack"
+          "layout": "BSP"
         },
         {
           "name": "V",
-          "layout": "Rows"
+          "layout": "BSP"
         },
         {
           "name": "VI",
-          "layout": "Grid"
+          "layout": "BSP"
         },
         {
           "name": "VII",
-          "layout": "RightMainVerticalStack"
+          "layout": "BSP"
         }
       ]
+    }
+  ],
+  "floating_applications": [
+    {
+      "kind": "Title",
+      "id": "Nachricht",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "Termin",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "Besprechung",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Exe",
+      "id": "7zFM.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "ignore_rules": [
+    {
+      "kind": "Exe",
+      "id": "Enpass.exe",
+      "matching_strategy": "Equals"
     }
   ]
 }

@@ -23,8 +23,8 @@
     }
   },
   "display_index_preferences": {
-    "0": "IVM6643-4&2c4d2617&0&UID8261",
-    "1": "LEN4146-4&2c4d2617&0&UID8388688"
+    "0": "IVM6644-7&9bf0708&0&UID512",
+    "1": "AOC2590-7&9bf0708&0&UID516"
   },
   "monitors":  [
     {
@@ -39,7 +39,7 @@
         },
         {
           "name": "III",
-          "layout": "Grid"
+          "layout": "BSP"
         },
         {
           "name": "IV",
@@ -54,8 +54,7 @@
           "layout": "BSP"
         },
         {
-          "name": "VII",
-          "layout": "BSP"
+          "name": "Floaters"
         }
       ]
     },
@@ -86,8 +85,7 @@
           "layout": "BSP"
         },
         {
-          "name": "VII",
-          "layout": "BSP"
+          "name": "Floaters"
         }
       ]
     }
@@ -112,13 +110,12 @@
       "kind": "Exe",
       "id": "7zFM.exe",
       "matching_strategy": "Equals"
-    }
-  ],
-  "ignore_rules": [
+    },
     {
       "kind": "Exe",
       "id": "Enpass.exe",
       "matching_strategy": "Equals"
     }
-  ]
+  ],
+  "ignore_rules": []
 }

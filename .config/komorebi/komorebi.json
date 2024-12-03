@@ -28,6 +28,13 @@
   },
   "monitors":  [
     {
+      "window_based_work_area_offset_limit": 1,
+      "window_based_work_area_offset": {
+        "left": 300,
+        "top": 30,
+        "right": 600,
+        "bottom": 60
+      },
       "workspaces": [
         {
           "name": "I",

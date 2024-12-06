@@ -1,0 +1,13 @@
+[user]
+  email = xxx
+  name = xxx
+[init]
+  defaultBranch = main
+[pull]
+  rebase = true
+[core]
+  editor = nano
+  pager = delta
+  autocrlf = input
+[delta]
+  line-numbers = true

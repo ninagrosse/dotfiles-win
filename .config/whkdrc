@@ -64,6 +64,8 @@ alt + 5                 : komorebic focus-workspace 4
 alt + 6                 : komorebic focus-workspace 5
 alt + 7                 : komorebic focus-workspace 6
 alt + 8                 : komorebic focus-workspace 7
+alt + shift + right     : komorebic cycle-workspace next
+alt + shift + left      : komorebic cycle-workspace previous
 
 # Move windows across workspaces
 alt + shift + 1         : komorebic move-to-workspace 0

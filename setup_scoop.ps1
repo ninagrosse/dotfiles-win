@@ -12,10 +12,15 @@ $packages = @(
   "duf",
   "eza", 
   "fastfetch",
+  "fd",
+  "fzf",
   "git-aliases",
   "less",
   "nano",
-  "sudo"
+  "sudo",
+  "tealdeer",
+  "ugrep",
+  "zoxide"
 )
 
 foreach ($bucket in $buckets) {

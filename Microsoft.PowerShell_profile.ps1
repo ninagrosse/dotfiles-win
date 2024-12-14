@@ -15,11 +15,6 @@ Set-Alias -Name cat -Value bat -Option AllScope
 
 # Replace grep with ugrep
 Set-Alias -Name grep -Value ug
-Function egrep($path) { ug -E $path }
-Function fgrep($path) { ug -F $path }
-Function xzgrep($path) { ug -z $path }
-Function xzegrep($path) { ug -zE $path }
-Function xzfgrep($path) { ug -zF $path }
 
 # Init zoxide
 Invoke-Expression (& { (zoxide init powershell | Out-String) })

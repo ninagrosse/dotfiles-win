@@ -1,0 +1,32 @@
+# C:\Users\<USER>\AppData\Roaming\alacritty\alacritty.toml
+
+[general]
+live_config_reload = true
+import = [
+  "~/AppData/Roaming/alacritty/catppuccin-mocha.toml"
+]
+
+[terminal]
+shell= "ubuntu"
+
+[window]
+dimensions = { columns = 140, lines = 40 }
+# decorations = "None"
+opacity = 0.9
+blur = true
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font" }
+size = 12
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+
+[keyboard]
+bindings = [
+  { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+  { key = "p", mods = "Control|Shift", command = { program = "alacritty", args = ["-e", "powershell -NoExit -Command \"cd ~\""] } }
+]

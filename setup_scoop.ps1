@@ -17,7 +17,6 @@ $packages = @(
   "git-aliases",
   "less",
   "nano",
-  "sudo",
   "tealdeer",
   "ugrep",
   "zoxide"

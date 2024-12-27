@@ -14,7 +14,7 @@ function symlink($target, $source) {
     $backup = $target + ".pre-dotfiles"
     Move-Item -Path $target -Destination $backup
   }
-  cmd /c mklink $target $source
+  cmd /c mklink /D $target $source
 }
 
 # Create directories, if they don't exist
@@ -23,11 +23,9 @@ create_dir $Env:USERPROFILE\.config\komorebi
 create_dir $Env:USERPROFILE\.config\yasb
 
 # Symlink config files
-symlink $Env:USERPROFILE\.config\komorebi\applications.json $Env:USERPROFILE\.dotfiles-win\.config\komorebi\applications.json
-symlink $Env:USERPROFILE\.config\komorebi\komorebi.json $Env:USERPROFILE\.dotfiles-win\.config\komorebi\komorebi.json
-symlink $Env:USERPROFILE\.config\yasb\config.yaml $Env:USERPROFILE\.dotfiles-win\.config\yasb\config.yaml
-symlink $Env:USERPROFILE\.config\yasb\styles.css $Env:USERPROFILE\.dotfiles-win\.config\yasb\styles.css
-symlink $Env:USERPROFILE\.config\whkdrc $Env:USERPROFILE\.dotfiles-win\.config\whkdrc
+symlink $Env:USERPROFILE\.config\komorebi $Env:USERPROFILE\.dotfiles-win\.config\komorebi
+symlink $Env:USERPROFILE\.config\yasb $Env:USERPROFILE\.dotfiles-win\.config\yasb
+cmd /c mklink $Env:USERPROFILE\.config\whkdrc $Env:USERPROFILE\.dotfiles-win\.config\whkdrc
 
 Write-Host ""
 Write-Host "Setting up komorebi autostart"

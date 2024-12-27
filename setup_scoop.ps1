@@ -1,5 +1,20 @@
 # Install scoop buckets and packages
 
+# Some helper functions
+function create_dir($dir) {
+  if (!(Test-Path -Path $dir)) {
+    Write-Host "Creating directory" $dir
+    mkdir $dir > $null
+  }
+}
+function symlink($target, $source) {
+  if (Test-Path -Path $target) {
+    $backup = $target + ".pre-dotfiles"
+    Move-Item -Path $target -Destination $backup
+  }
+  cmd /c mklink /D $target $source
+}
+
 $buckets = @(
   "extras"
 )
@@ -15,10 +30,14 @@ $packages = @(
   "fd",
   "fzf",
   "git-aliases",
+  "jq",
   "less",
   "nano",
+  "neovim",
+  "ripgrep",
   "tealdeer",
   "ugrep",
+  "yazi",
   "zoxide"
 )
 
@@ -29,3 +48,7 @@ foreach ($bucket in $buckets) {
 foreach ($package in $packages) {
   scoop install $package
 }
+
+# Symlink Yazi config
+create_dir $Env:APPDATA\yazi
+symlink $Env:APPDATA\yazi\config $Env:USERPROFILE\.dotfiles-win\.config\yazi 

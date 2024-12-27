@@ -9,8 +9,13 @@ function create_dir($dir) {
 }
 function symlink($target, $source) {
   if (Test-Path -Path $target) {
-    $backup = $target + ".pre-dotfiles"
-    Move-Item -Path $target -Destination $backup
+    if ((Get-Item $target).LinkType -eq "SymbolicLink") {
+      Remove-Item -Path $target -Recurse
+    }
+    else {
+      $backup = $target + ".pre-dotfiles"
+      Move-Item -Path $target -Destination $backup
+    }
   }
   cmd /c mklink /D $target $source
 }

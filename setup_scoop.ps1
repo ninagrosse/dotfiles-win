@@ -42,6 +42,7 @@ $packages = @(
   "ripgrep",
   "tealdeer",
   "ugrep",
+  "win32yank",
   "yazi",
   "zoxide"
 )
@@ -57,3 +58,4 @@ foreach ($package in $packages) {
 # Symlink Yazi config
 create_dir $Env:APPDATA\yazi
 symlink $Env:APPDATA\yazi\config $Env:USERPROFILE\.dotfiles-win\.config\yazi 
+

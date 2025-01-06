@@ -40,6 +40,7 @@ $packages = @(
   "make",
   "mingw",
   "nano",
+  "neovide",
   "neovim",
   "ripgrep",
   "tealdeer",

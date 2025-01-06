@@ -37,6 +37,8 @@ $packages = @(
   "git-aliases",
   "jq",
   "less",
+  "make",
+  "mingw",
   "nano",
   "neovim",
   "ripgrep",

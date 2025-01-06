@@ -29,6 +29,7 @@ $packages = @(
   "Balena.Etcher"
   "Obsidian.Obsidian",
   "WinSCP.WinSCP",
+  "SSHFS-Win.SSHFS-Win"
   "Microsoft.VisualStudioCode"
 )
 

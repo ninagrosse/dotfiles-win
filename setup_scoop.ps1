@@ -36,6 +36,7 @@ $packages = @(
   "fzf",
   "git-aliases",
   "jq",
+  "lazygit",
   "less",
   "make",
   "mingw",

@@ -10,6 +10,9 @@ Function la($path) { eza -lag --icons=auto --group-directories-first $path }
 Function l($path) { eza -lg $path }
 Set-Alias -Name ls -Value eza -Option AllScope
 
+# lazygit alias
+Set-Alias -Name lg -Value lazygit
+
 # Replace cat with bat
 Set-Alias -Name cat -Value bat -Option AllScope
 

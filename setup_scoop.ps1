@@ -59,6 +59,10 @@ foreach ($package in $packages) {
   scoop install $package
 }
 
+# Symlink Yazi config
+create_dir $Env:APPDATA\yazi
+symlink $Env:APPDATA\yazi\config $Env:USERPROFILE\.dotfiles-win\.config\yazi 
+
 # Symlink Neovide config
 symlink $Env:APPDATA\neovide $Env:USERPROFILE\.dotfiles-win\.config\neovide 
 

@@ -7,13 +7,14 @@ My personal dotfiles for Windows 11
 - Automatic installation of various Scoop packages. See the list of packages in [setup_scoop.ps1](setup_scoop.ps1).
 - Automatic installation of various winget packages. See the list of packages in [setup_winget.ps1](setup_winget.ps1).
 - Automatic setup of [komorebi](https://github.com/LGUG2Z/komorebi) and [yasb](https://github.com/amnweb/yasb)
+- The `dotfiles-unix` submodule points to my [unix-dotfiles](https://github.com/ninagrosse/dotfiles), so the configs for cross-platform tools like `bat`, `lazygit` and `yazi` don't need to be maintained twice
 - Templates for `.gitconfig` and `Microsoft.PowerShell_profile.ps1`
 
 ## Prerequisites
 
 Clone in PowerShell (the path is important)
 ```shell
-git clone git@github.com:ninagrosse/dotfiles-win.git $Env:USERPROFILE/.dotfiles-win
+git clone git@github.com:ninagrosse/dotfiles-win.git $Env:USERPROFILE/.dotfiles-win --recurse-submodules
 cd $Env:USERPROFILE/.dotfiles-win
 ```
 

@@ -32,6 +32,3 @@ function y {
   }
   Remove-Item -Path $tmp
 }
-
-# Set $env:YAZI_FILE_ONE so file preview and opening actually works
-$env:YAZI_FILE_ONE = 'C:\Program Files\Git\usr\bin\file.exe'

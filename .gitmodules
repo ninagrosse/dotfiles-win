@@ -1,3 +1,4 @@
 [submodule "dotfiles-unix"]
 	path = dotfiles-unix
 	url = git@github.com:ninagrosse/dotfiles.git
+	branch = main

@@ -59,9 +59,16 @@ foreach ($package in $packages) {
   scoop install $package
 }
 
+# Symlink bat config
+symlink $Env:APPDATA\bat $Env:USERPROFILE\.dotfiles-win\dotfiles-unix\.config\bat
+bat cache --build # rebuild cache so bat picks up Catppuccin Mocha theme
+
+# Symlink lazygit config
+symlink $Env:LOCALAPPDATA\lazygit $Env:USERPROFILE\.dotfiles-win\dotfiles-unix\.config\lazygit
+
 # Symlink Yazi config
 create_dir $Env:APPDATA\yazi
-symlink $Env:APPDATA\yazi\config $Env:USERPROFILE\.dotfiles-win\.config\yazi 
+symlink $Env:APPDATA\yazi\config $Env:USERPROFILE\.dotfiles-win\dotfiles-unix\.config\yazi
 
 # Symlink Neovide config
 symlink $Env:APPDATA\neovide $Env:USERPROFILE\.dotfiles-win\.config\neovide 

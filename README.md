@@ -9,6 +9,7 @@ My personal dotfiles for Windows 11
 - Automatic setup of [komorebi](https://github.com/LGUG2Z/komorebi) and [yasb](https://github.com/amnweb/yasb)
 - The `dotfiles-unix` submodule points to my [unix-dotfiles](https://github.com/ninagrosse/dotfiles), so the configs for cross-platform tools like `bat`, `lazygit` and `yazi` don't need to be maintained twice. Update the submodule with `git submodule update --remote`.
 - Templates for `.gitconfig` and `Microsoft.PowerShell_profile.ps1`
+- AutoHotkey script for remapping CapsLock to AltGr on a German keyboard
 
 ## Prerequisites
 
@@ -44,7 +45,8 @@ Go to Windows Settings -> System -> Developer -> PowerShell -> enable unsigned l
 - Set yasb to autostart via yasb tray icon
 - Launch komorebi from yasb tray icon
 
-## `.gitconfig` and `Microsoft.PowerShell_profile.ps1`
+## Other files
 
 - Copy `.gitconfig` to `C:\Users\<USER>\.gitconfig` and edit the `[user]` entries
 - Run `echo $profile` in PowerShell to get the location of `Microsoft.PowerShell_profile.ps1` (usually `C:\Users\<USER>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`) and copy/replace the template there
+- To start the AutoHotkey script upon login, run (Win+R) `shell:startup` to open the startup folder. Create a shortcut to `capslock.ahk` in this folder.

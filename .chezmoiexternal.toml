@@ -1,3 +1,13 @@
+[".bash_aliases"]
+type = "file"
+url = "https://raw.githubusercontent.com/ninagrosse/dotfiles/refs/heads/main/dot_bash_aliases"
+refreshPeriod = "24h"
+
+[".vimrc"]
+type = "file"
+url = "https://raw.githubusercontent.com/ninagrosse/dotfiles/refs/heads/main/dot_vimrc"
+refreshPeriod = "24h"
+
 ["AppData/Roaming/bat/config"]
 type = "file"
 url = "https://raw.githubusercontent.com/ninagrosse/dotfiles/refs/heads/main/dot_config/bat/config"

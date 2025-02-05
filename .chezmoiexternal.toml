@@ -2,7 +2,13 @@
 type = "file"
 url = "https://raw.githubusercontent.com/ninagrosse/dotfiles/refs/heads/main/dot_config/bat/config"
 refreshPeriod = "24h"
+
 ["AppData/Roaming/bat/themes/Catppuccin%20Mocha.tmTheme"]
 type = "file"
 url = "https://raw.githubusercontent.com/ninagrosse/dotfiles/refs/heads/main/dot_config/bat/themes/Catppuccin%20Mocha.tmTheme"
+refreshPeriod = "24h"
+
+["AppData/Local/lazygit/config.yml"]
+type = "file"
+url = "https://raw.githubusercontent.com/ninagrosse/dotfiles/refs/heads/main/dot_config/lazygit/config.yml"
 refreshPeriod = "24h"

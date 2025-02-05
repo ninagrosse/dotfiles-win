@@ -12,3 +12,28 @@ refreshPeriod = "24h"
 type = "file"
 url = "https://raw.githubusercontent.com/ninagrosse/dotfiles/refs/heads/main/dot_config/lazygit/config.yml"
 refreshPeriod = "24h"
+
+["AppData/Roaming/yazi/config/init.lua"]
+type = "file"
+url = "https://raw.githubusercontent.com/ninagrosse/dotfiles/refs/heads/main/dot_config/yazi/init.lua"
+refreshPeriod = "24h"
+
+["AppData/Roaming/yazi/config/keymap.toml"]
+type = "file"
+url = "https://raw.githubusercontent.com/ninagrosse/dotfiles/refs/heads/main/dot_config/yazi/keymap.toml"
+refreshPeriod = "24h"
+
+["AppData/Roaming/yazi/config/package.toml"]
+type = "file"
+url = "https://raw.githubusercontent.com/ninagrosse/dotfiles/refs/heads/main/dot_config/yazi/package.toml"
+refreshPeriod = "24h"
+
+["AppData/Roaming/yazi/config/theme.toml"]
+type = "file"
+url = "https://raw.githubusercontent.com/ninagrosse/dotfiles/refs/heads/main/dot_config/yazi/theme.toml"
+refreshPeriod = "24h"
+
+["AppData/Roaming/yazi/config/yazi.toml"]
+type = "file"
+url = "https://raw.githubusercontent.com/ninagrosse/dotfiles/refs/heads/main/dot_config/yazi/yazi.toml"
+refreshPeriod = "24h"

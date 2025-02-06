@@ -10,7 +10,7 @@ $packages = @(
   "curlie",
   "delta",
   "duf",
-  "eza", 
+  "eza",
   "fastfetch",
   "fd",
   "fzf",

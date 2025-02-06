@@ -4,5 +4,5 @@ LICENSE
 OneDrive - Bertelsmann SE & Co. KGaA/Dokumente/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
 {{ end }}
 {{ if ne .chezmoi.hostname "nina-desktop" }}
-
+02-install_winget_packages.ps1
 {{ end }}

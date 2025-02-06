@@ -39,3 +39,9 @@ foreach ($bucket in $buckets) {
 foreach ($package in $packages) {
   scoop install $package
 }
+
+# Build bat cache so it can pick up Catppuccin theme
+bat cache --build
+
+# Run 'ya pack' to install yazi plugins and themes
+ya pack -i

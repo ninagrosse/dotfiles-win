@@ -5,4 +5,5 @@ OneDrive - Bertelsmann SE & Co. KGaA/Dokumente/WindowsPowerShell/Microsoft.Power
 {{ end }}
 {{ if ne .chezmoi.hostname "nina-desktop" }}
 02-install_winget_packages.ps1
+OneDrive/Dokumente/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
 {{ end }}

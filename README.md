@@ -1,52 +1,43 @@
 # dotfiles-win
 
-My personal dotfiles for Windows 11
+My personal dotfiles for Windows 11, managed with [chezmoi](https://github.com/twpayne/chezmoi)
 
-## Content
+## Requirements
 
-- Automatic installation of various Scoop packages. See the list of packages in [setup_scoop.ps1](setup_scoop.ps1).
-- Automatic installation of various winget packages. See the list of packages in [setup_winget.ps1](setup_winget.ps1).
-- Automatic setup of [komorebi](https://github.com/LGUG2Z/komorebi) and [yasb](https://github.com/amnweb/yasb)
-- The `dotfiles-unix` submodule points to my [unix-dotfiles](https://github.com/ninagrosse/dotfiles), so the configs for cross-platform tools like `bat`, `lazygit` and `yazi` don't need to be maintained twice. Update the submodule with `git submodule update --remote`.
-- Templates for `.gitconfig` and `Microsoft.PowerShell_profile.ps1`
-- AutoHotkey script for remapping CapsLock to AltGr on a German keyboard
+* [Scoop](https://scoop.sh/)
+* winget
+* [Jetbrains Mono Nerd Font](https://www.nerdfonts.com/font-downloads)
 
-## Prerequisites
+## Installation
 
-Clone in PowerShell (the path is important)
+In Windows Settings
+
+* Go to System -> Developer -> PowerShell -> enable unsigned local scripts
+* Go to System -> Developer -> Enable Developer Mode
+* Go to System -> Multitaksing -> Disable Windows Snap Assist (if using komorebi)
+
+Install `chezmoi`
 
 ```shell
-git clone git@github.com:ninagrosse/dotfiles-win.git $Env:USERPROFILE/.dotfiles-win --recurse-submodules
-cd $Env:USERPROFILE/.dotfiles-win
+scoop install chezmoi
 ```
 
-Go to Windows Settings -> System -> Developer -> PowerShell -> enable unsigned local scripts
+Install dotfiles
 
-## Install Scoop packages
+```shell
+chezmoi init --apply ninagrosse/dotfiles-win --ssh
+```
 
-- Install [Scoop](https://scoop.sh/)
-- Run `.\setup_scoop.ps1` in PowerShell
+This clones the repo and applies everything. Follow the on-screen prompts to setup git email and username. For cloning with https instead, omit `--ssh`.
 
-## Install winget packages
+To start the AutoHotkey script upon login, run (Win+R) `shell:startup` to open the startup folder. Create a shortcut to `capslock.ahk` in this folder.
 
-- Start PowerShell as admin or disable UAC
-- Run `.\setup_winget.ps1` in PowerShell
-- Reenable UAC (if disabled)
+## Scripts description
 
-## Setup komorebi and yasb
+#### [`run_onchange_01-install_scoop_packages.ps1`](run_onchange_01-install_scoop_packages.ps1)
 
-- Install [Jetbrains Mono Nerd Font](https://www.nerdfonts.com/font-downloads)
-- komorebi and yasb are installed via `.\setup_winget.ps1`
-- Disable Windows Snap Assist (Windows Settings -> System -> Multitasking)
-- Enable Developer Mode (Windows Settings -> System -> Developer -> Enable Developer Mode)
-- Restart PowerShell
-- Run `.\setup_komorebi_yasb.ps1` in PowerShell
-- Start yasb from the start menu
-- Set yasb to autostart via yasb tray icon
-- Launch komorebi from yasb tray icon
+Installs various CLI tools and apps with Scoop and performs necessary setups if needed. Config files for cross-platform tools like `bat`, `lazygit` and `yazi` are imported from my [linux-dotfiles](https://github.com/ninagrosse/dotfiles) with [`.chezmoiexternal.toml`](.chezmoiexternal.toml).
 
-## Other files
+#### [`run_onchange_02-install_winget_packages.ps1`](run_onchange_02-install_winget_packages.ps1)
 
-- Copy `.gitconfig` to `C:\Users\<USER>\.gitconfig` and edit the `[user]` entries
-- Run `echo $profile` in PowerShell to get the location of `Microsoft.PowerShell_profile.ps1` (usually `C:\Users\<USER>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`) and copy/replace the template there
-- To start the AutoHotkey script upon login, run (Win+R) `shell:startup` to open the startup folder. Create a shortcut to `capslock.ahk` in this folder.
+Installs various desktop applications with winget.

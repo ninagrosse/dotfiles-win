@@ -46,5 +46,5 @@ bat cache --build
 # Run 'ya pack' to install yazi plugins and themes
 ya pack -i
 
-# Set YAZI_FILE_ONE system env, so yazi file previews work (requires Git Bash, which is installed via winget)
+# Set YAZI_FILE_ONE system env, so yazi file previews work
 [System.Environment]::SetEnvironmentVariable('YAZI_FILE_ONE','C:\Program Files\Git\usr\bin\file.exe', 'User')

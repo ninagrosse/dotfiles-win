@@ -13,7 +13,6 @@ $packages = @(
   "7zip.7zip",
   "Piriform.CCleaner",
   "CPUID.CPU-Z",
-  "Git.Git",
   "Mozilla.Thunderbird.de",
   "Notepad++.Notepad++",
   "VideoLAN.VLC",

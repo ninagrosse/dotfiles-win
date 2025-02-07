@@ -6,6 +6,7 @@ My personal dotfiles for Windows 11, managed with [chezmoi](https://github.com/t
 
 * [Scoop](https://scoop.sh/)
 * winget
+* [Git for Windows](https://git-scm.com/downloads/win) (can install with `winget install --id Git.Git -e --source winget`)
 * [Jetbrains Mono Nerd Font](https://www.nerdfonts.com/font-downloads)
 
 ## Installation

@@ -20,18 +20,15 @@ $packages = @(
   "LGUG2Z.komorebi",
   "Cryptomator.Cryptomator",
   "LGUG2Z.whkd"
+  "wez.wezterm",
   "PuTTY.PuTTY",
   "AmN.yasb",
-  "Oracle.VirtualBox",
-  "Guru3D.Afterburner",
   "Brave.Brave",
-  "Guru3D.RTSS",
   "Microsoft.PowerToys",
   "WinFsp.WinFsp",
-  "Sonos.Controller",
   "Foxit.FoxitReader",
   "Sinew.Enpass",
-  "dbeaver.dbeaver",
+  "AutoHotkey.AutoHotkey",
   "Discord.Discord",
   "WinDirStat.WinDirStat",
   "Balena.Etcher"
@@ -42,5 +39,5 @@ $packages = @(
 )
 
 foreach ($package in $packages) {
-  winget install $package
+  winget install -h $package
 }

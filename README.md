@@ -15,12 +15,18 @@ In Windows Settings
 
 * Go to System -> Developer -> PowerShell -> enable unsigned local scripts
 * Go to System -> Developer -> Enable Developer Mode
-* Go to System -> Multitaksing -> Disable Windows Snap Assist (if using komorebi)
+* Go to System -> Multitasking -> Disable Windows Snap Assist (if using komorebi)
 
 Install `chezmoi`
 
 ```shell
+# with scoop
 scoop install chezmoi
+```
+
+```shell
+# with winget
+winget install twpayne.chezmoi
 ```
 
 Install dotfiles

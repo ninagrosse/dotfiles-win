@@ -14,3 +14,7 @@ OneDrive/Dokumente/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
 .config/yasb/config.yaml
 .config/yasb/styles.css
 {{ end }}
+
+{{ if ne .chezmoi.hostname "nina-ally" }}
+Dokumente/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
+{{ end }}

@@ -23,6 +23,7 @@ $packages = @(
   "nano",
   "neovide",
   "neovim",
+  "nvm",
   "ripgrep",
   "starship",
   "tealdeer",

@@ -1,5 +1,12 @@
 # dotfiles-win
 
+---
+
+> [!WARNING]
+> This repository is deprecated. My Windows dotfiles are now included in [ninagrosse/dotfiles](https://github.com/ninagrosse/dotfiles).
+
+---
+
 My personal dotfiles for Windows 11, managed with [chezmoi](https://github.com/twpayne/chezmoi)
 
 ## Requirements

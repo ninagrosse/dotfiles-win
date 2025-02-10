@@ -1,6 +1,10 @@
 README.md
 LICENSE
 
+{{ if ne .osid "windows" }}
+AppData/
+{{ end }}
+
 {{ if ne .chezmoi.hostname "RTY-6495672069" }}
 OneDrive - Bertelsmann SE & Co. KGaA/Dokumente/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
 {{ end }}

@@ -18,11 +18,6 @@ type = "file"
 url = "https://raw.githubusercontent.com/ninagrosse/dotfiles/refs/heads/main/dot_config/bat/themes/Catppuccin%20Mocha.tmTheme"
 refreshPeriod = "24h"
 
-["AppData/Local/lazygit/config.yml"]
-type = "file"
-url = "https://raw.githubusercontent.com/ninagrosse/dotfiles/refs/heads/main/dot_config/lazygit/config.yml"
-refreshPeriod = "24h"
-
 ["AppData/Roaming/yazi/config/init.lua"]
 type = "file"
 url = "https://raw.githubusercontent.com/ninagrosse/dotfiles/refs/heads/main/dot_config/yazi/init.lua"
